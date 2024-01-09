@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="icon" href="/public/img/favicon.png">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: rgba(70, 131, 180, 0.534);
+        background-image: url("/public/img/bg2.jpg");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 120px;
+        background-color: teal;
+        align-items: center;
+        position: sticky;
+        z-index: 3;
+        margin: 0 auto;
+        color: white;
+        border-radius: 8px;
+      }
+      .logo {
+        font-weight: bold;
+        font-size: 35px;
+        cursor: pointer;
+      }
+      span {
+        display: inline-block;
+        padding: 0 10px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: .4s ease;
+        margin-right: 5px;
+      }
+      span:hover {
+        background-color: aqua;
+        padding: 5px;
+        border-radius: 10px;
+        transform: scale(1.1);
+      }
+      section {
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+
+      }
+      ul {
+        margin-left: -25px;
+        list-style: none;
+        width: 180px;
+        
+      }
+      ul li {
+        padding: 15px;
+        background-color: teal;
+        margin: 5px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 400;
+        cursor: pointer;
+        transition: .5s ease;
+        margin-bottom: 10px;
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      li:hover {
+        background-color: aqua;
+        transform: scale(1.1);
+      }
+      iframe {
+        background-color: antiquewhite;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        margin-top: 15px;
+        padding-top: 10px;
+        padding-right: 10px;
+      }
+      span a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Shopper.</div>
+        <div>
+          <span><a
+            target="frameBody"
+            href="Home.html"
+            >Home</a
+          ></span>
+          <span><a
+            target="frameBody"
+            href="Mobilles.html"
+            >Mobiles</a
+          ></span>
+          <span><a
+            target="frameBody"
+            href="Watches.html"
+            >Watches</a
+          ></span>
+          <span><a
+            target="frameBody"
+            href="Television.html"
+            >Televisions</a
+          ></span>
+        </div>
+      </header>
+    <section>
+      <nav>
+        <ul>
+          <li>
+            <a
+              target="frameBody"
+              href="Home.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              target="frameBody"
+              href="Mobilles.html"
+              >Mobiles</a
+            >
+          </li>
+          <li>
+            <a
+              target="frameBody"
+              href="Watches.html"
+              >Watches</a
+            >
+          </li>
+          <li>
+            <a
+              target="frameBody"
+              href="Television.html"
+              >Televisions</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <iframe
+          src="Home.html"
+          name="frameBody"
+          width="96%"
+          height="515px"
+          frameborder="0"
+        ></iframe>
+    </main>
+</body>
+</html>
